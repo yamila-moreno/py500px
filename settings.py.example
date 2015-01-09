@@ -1,0 +1,14 @@
+# GET THOSE KEYS FROM 500PX > SETTINGS > APPLICATIONS
+# There, register a new application and fill the next
+# two values
+KEY = 'XXXXXXXXXXXXXXXXXXXX'
+SECRET = 'XXXXXXXXXXXXXXXXXXXX'
+
+# You don't need to change it.
+CALLBACK_URL = 'http://127.0.0.1/'
+ENDPOINT = 'https://api.500px.com/v1/'
+
+# After executing tokens.py, you can fill
+# the next two values to get access to 500px.
+OAUTH_TOKEN = 'XXXXXXXXXXXXXXXXXXXX'
+OAUTH_TOKEN_SECRET = 'XXXXXXXXXXXXXXXXXXXX'
