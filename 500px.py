@@ -75,16 +75,25 @@ if __name__ == '__main__':
     elif args.action == 'set_tag':
         col_id = args.col_id
         tag = args.tag
+        if not col_id or not tag:
+            print('Incorrect params. See --help')
+            exit()
         set_tag_for_collection(oauth, col_id, tag)
 
     elif args.action == 'set_name':
         col_id = args.col_id
         name = args.name
+        if not col_id or not name:
+            print('Incorrect params. See --help')
+            exit()
         set_name_for_photos_in_a_collection(oauth, col_id, name)
 
     elif args.action == 'create_collection':
         name = args.name
         path = args.path
+        if not path or not name:
+            print('Incorrect params. See --help')
+            exit()
         create_collection(oauth, name, path)
 
     elif args.action == 'upload_photo':
