@@ -42,7 +42,7 @@ Get collections
 Add a tag to all the photos of one collection
 ---------------------------------------------
 
-    $ python 500px.py --set_tag --col_id ID --tag NEW_TAG
+    $ python 500px.py --action set_tag --col_id ID --tag NEW_TAG
 
 
 Set a name for all the photos in a collection
@@ -50,7 +50,7 @@ Set a name for all the photos in a collection
 
 If you upload a whole directory and you don't want to set the title to each photo, you may find useful to set one title for all the photos in a collection:
 
-    $ python 500px.py --set_name --col_id ID --tag NAME
+    $ python 500px.py --action set_name --col_id ID --name NAME
 
 
 Note: the official documentation seems to be deprecated. Instead, the online api works fine, so this code follows that online console at: https://apigee.com/vova/embed/console/api500px
